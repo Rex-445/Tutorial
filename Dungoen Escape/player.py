@@ -104,6 +104,8 @@ class Player():
         #Update Positions
         self.sprite.x = self.pos[0]
         self.sprite.y = self.pos[1]
+        if self.direction == -1:
+            self.sprite.x += 220
         
         self.sprite.draw()
 
